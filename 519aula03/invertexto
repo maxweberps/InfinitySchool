@@ -1,0 +1,193 @@
+https://docs.google.com/presentation/d/10rMgQRTTXCTdBvm6fbxRVGNFd9ZoecyAbs6s9iftKn4/edit#slide=id.p1
+----------------------------------------------------
+
+# count = 0
+# while count < 10:
+#     print(count)
+#     count += 1
+
+# range(qtd)
+# print(list(range(10)))
+
+# [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+for i in range(10):
+    print(i)
+
+------------he-----------------------------------------
+1. Utilizando for imprima 10 vezes a mensagem "hello world" na tela
+for i in range(10):
+    print('Hello World')
+-------------------------------------------------
+2. Utilizando for imprima uma sequencia de 0 a 100
+for i in range(101):
+    print(i)
+-------------------------------------------------
+3. Utilizando for imprima uma sequencia de 0 até um número digitado pelo usuário
+var = int(input('Digite um valor: '))
+for i in range(var + 1):
+    print(i)
+--------------------------------------------------
+4. Utilizando for imprima todos os números pares de 0 a 100
+for i in range(101):
+    if i % 2 == 0:
+        print(i)
+----------------------------------------------
+5. Utilizando for imprima todos os pares de 0 até o número digitado pelo usuário
+var = int(input('Digite um número: ')) + 1
+for i in range(var):
+    if i % 2 == 0:
+        print(i)
+--------------------------------------------
+6. Utilizando for leia 10 números, se este número for par imprima "este número é par" se este número for ímpar imprima "este número é ímpar"
+for i in range(10):
+    num = int(input('Digite um número: '))
+    if num % 2 == 0:
+        print('Este número é par')
+    else:
+        print('Este número é ímpar')
+------------------------------------------------------
+7. Utilizando for leia 10 números e ao final imprima a quantidade de pares e a quantidade de ímpares 
+pares = 0
+impares = 0
+for i in range(10):
+    num = int(input('Digite um número: '))
+    if num % 2 == 0:
+        pares += 1
+    else:
+        impares += 1
+print(f'Quantidade de pares = {pares}')
+print(f'Quantidade de ímpares = {impares}')
+-----------------------------------------------------------
+--------------- desafio -------------------------
+1. Número perfeito. 
+6 = 1 + 2 + 3 = 6
+Escreva um algoritmo, que leia um número e informe se ele é ou não um número perfeito
+
+2. Números primos.
+7 = 1, 7
+Escreva um algoritmo que leia um número e informe se ele é ou não um número primo.
+-----------------------------------------------------
+
+'''
+Sintaxe de uma função
+def nomeDaFuncao():
+    <codigo>
+
+Como executar/chamar uma função?
+nomeDaFuncao()
+'''
+def autenticar():
+    senha = input('Digite a senha: ')
+    if senha == '123':
+        print('ok')
+    else:
+        print('dados inválidos')
+
+# pix
+autenticar()
+
+#recarga
+autenticar()
+
+-------------------------------------------------------------
+1. Escreva uma função que leia dois números e imprima a soma dos dois
+def somar():
+    n1 = int(input('Digite um número: '))
+    n2 = int(input('Digite um número: '))
+    resultado = n1 + n2
+    print(f"O resultado é = {resultado}")
+
+somar()
+---------------------------------------------------------
+2. Escreva uma função que leia base e altura de um triangulo e imprima a sua área
+area = base * altura / 2
+----------------------------------------------------------
+def areaTriangulo():
+    base = float(input('Digite a base: '))
+    altura = float(input('Digite a altura: '))
+    area = base * altura / 2 
+    print(f"Área do triangulo = {area}")
+areaTriangulo()
+---------------------------------------------------------
+3. Escreva uma função que leia peso e altura de uma pessoa a imprima o seu IMC
+imc = peso / altura ** 2
+------------------------------------------------------------------
+def calcularImc():
+    peso = float(input('Digite seu peso: '))
+    altura = float(input('Digite a sua altura: '))
+    imc = peso / altura ** 2
+    print(f"Seu imc é = {imc:.2f}")
+calcularImc()
+-------------------------------------------------------------------
+4. Escreva uma função que leia dois números e imprima o maior
+-------------------------------------------------------------
+def maiorMenor():
+    n1 = int(input('Digite um número: '))
+    n2 = int(input('Digite um número: '))
+    if n1 > n2:
+        print(n1)
+    elif n2 > n1:
+        print(n2)
+    else:
+        print('Numeros iguais')
+maiorMenor()
+----------------------------------------------------------
+5. Escreva uma função que leia 3 notas, calcule a média e se a média for maior ou igual a 6 imprima "você esta aprovado" senão imprima "você está de recuperação"
+-------------------------------------------
+def calcularMedia():
+    n1 = float(input('Digite uma nota: '))
+    n2 = float(input('Digite uma nota: '))
+    n3 = float(input('Digite uma nota: '))
+    media = (n1 + n2 + n3) / 3
+    if media >= 6:
+        print('Você está aprovado!')
+    else:
+        print('Você está de recuperação!')
+calcularMedia()
+----------------------------------------
+6. Escreva uma função que imprima uma sequencia de 0 a 100.
+------------------------------------------
+def sequencia():
+    for i in range(101):
+        print(i)
+sequencia()
+------------------------------------------
+7. Escreva uma função que leia 10 números e imprima a quantidade de pares, impares e números maiores que 20
+-------------------------------------------
+def quantidades():
+    pares = 0
+    impares = 0
+    maiores20 = 0
+    for i in range(10):
+        num = int(input('Digite um número: '))
+        if num % 2 == 0:
+            pares += 1
+        else:
+            impares += 1
+        if num >= 20:
+            maiores20 += 1
+    print(f"Quantidade de pares = {pares}")
+    print(f"Quantidade de ímpares = {impares}")
+    print(f"Quantidade de valores maiores que 20 = {maiores20}")
+
+quantidades()
+-----------------------------------------------------
+8. Escreva uma função que leia o tempo de uma viagem e a velocidade média nessa viagem, em seguida informe o consumo total de combustivel da viagem, levando em consideração que o veiculo faz 10km/l
+-----------------------------------------------------
+def calcularConsumo():
+    tempo = int(input('Digite o tempo da viagem: '))
+    velocidade = int(input('Digite a velocidade média do veiculo: '))
+    distancia = tempo * velocidade
+    consumo = distancia / 10
+    print(f"Consumo total: {consumo}")
+calcularConsumo()
+----------------------------------------------------
+
+---------------------------------------------------
+9. Escreva uma função que leia três lados de um triangulo e informe se ele forma um angulo reto.
+a soma dos quadrados de dois lados precisa ser igual ao quadrado do terceiro lado em pelo menos um dos casos.
+
+-------------------------------------------------------------
+projetosfortal@infinityschool.com.br
+-------------------------------------------------------------
+
