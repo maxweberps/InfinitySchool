@@ -24,7 +24,7 @@ def obter_conta(conta: int) -> dict or None:
     for cliente in banco:
         if cliente['conta'] == conta:
             return cliente
-        return None
+    return None
 
 
 def deletar_conta(conta: int) -> None:
