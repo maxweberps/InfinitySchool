@@ -1,6 +1,0 @@
-for i in range(0,10):
-    num = int(input('Digite um número: '))
-    if num % 2 == 0:
-        print(f'{num} é par')
-    else:
-        print(f'{num} é impar')
