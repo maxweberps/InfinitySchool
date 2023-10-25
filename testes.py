@@ -1,13 +1,3 @@
-dados = {
+palavras = ['gato', 'cachorro', 'elefante', 'leão', 'tigre','papagaio']
 
-    "nome": "Maria",
-
-    "idade": 25,
-
-    "cidade": "São Paulo",
-
-    "profissao": "Engenheira"
-
-}
-
-print(dados.values())
+print(list(filter(lambda x: len(x) > 5, palavras)))
