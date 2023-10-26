@@ -24,5 +24,5 @@ class Aluno(Pessoa):
 
 
 if __name__ == "__main__":
-    aluno1 = Aluno('Jonas', 17, 'Python', 9.5)
-    print(aluno1)
+    aluno = Aluno("Jonas", 17, "Python", 9.5)
+    print(aluno)
