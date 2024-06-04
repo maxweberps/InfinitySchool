@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferências de Filmes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        .category {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Quais categorias de filme você prefere?</h1>
+        <form action="#" method="post">
+            <div class="category">
+                <input type="checkbox" id="acao" name="filme_categoria" value="Ação">
+                <label for="acao">Ação</label>
+            </div>
+            <div class="category">
+                <input type="checkbox" id="comedia" name="filme_categoria" value="Comédia">
+                <label for="comedia">Comédia</label>
+            </div>
+            <div class="category">
+                <input type="checkbox" id="drama" name="filme_categoria" value="Drama">
+                <label for="drama">Drama</label>
+            </div>
+            <div class="category">
+                <input type="checkbox" id="ficcao" name="filme_categoria" value="Ficção Científica">
+                <label for="ficcao">Ficção Científica</label>
+            </div>
+            <div class="category">
+                <input type="checkbox" id="romance" name="filme_categoria" value="Romance">
+                <label for="romance">Romance</label>
+            </div>
+            <div class="category">
+                <input type="checkbox" id="terror" name="filme_categoria" value="Terror">
+                <label for="terror">Terror</label>
+            </div>
+            <div class="category">
+                <input type="checkbox" id="animacao" name="filme_categoria" value="Animação">
+                <label for="animacao">Animação</label>
+            </div>
+            <div class="category">
+                <input type="checkbox" id="documentario" name="filme_categoria" value="Documentário">
+                <label for="documentario">Documentário</label>
+            </div>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

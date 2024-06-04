@@ -1,2 +1,0 @@
-Construa uma aplicação contendo pelo menos 2 ou 3 páginas, cada uma delas contendo informações sobre um esporte olímpico.
-Em cada página deve conter o nome do esporte, uma imagem representativa e informações, por exemplo, paises que mais ganharam medalhas, data de inclusão nas olimpiadas e algumas curiosidades.

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro de usuário</title>
+    </head>
+
+    <body>
+        <h1>Preencha seus dados</h1>
+        <hr>
+        <form action="#">
+            <h2>Dados Pessoais</h2>
+
+            <!-- nome -->
+            <label for="lb_nome">Nome:</label>
+            <input type="text" name="in_nome" size="25px"> <br><br>
+
+            <!-- cpf -->
+            <label for="lb_cpf">CPF:</label>
+            <input type="text" name="in_cpf" size="27px"> <br><br>
+
+            <!-- data nascimento -->
+            <label for="lb_nascimento">Data de nasc.:</label>
+            <input type="text" name="in_nascimento" size="19px"> <br><br>
+
+            <!-- email -->
+            <label for="lb_email">E-mail:</label>
+            <input type="email" name="in_email" size="25px"> <br><br>
+
+            <!-- sexo -->
+            <label for="sexo">Sexo: </label>
+            <input type="radio" name="sexo">
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="sexo">
+            <label for="feminino">Feminino</label><br><br>
+
+            <!-- preferências -->
+            <label for="lb_preferencias">Preferências:</label> <br>
+            <input type="checkbox" id="acao" name="categoria">
+            <label for="acao">Ação</label> <br>
+            <input type="checkbox" id="comedia" name="categoria">
+            <label for="comedia">Comédia</label> <br>
+            <input type="checkbox" id="drama" name="categoria">
+            <label for="drama">Drama</label> <br>
+            <input type="checkbox" id="romance" name="categoria">
+            <label for="romance">Romance</label> <br>
+            <input type="checkbox" id="terror" name="categoria">
+            <label for="terror">Terror</label> <br>
+            
+            <hr>
+            <!-- senha -->
+            <h2>Cadastrar senha</h2>
+            <label for="lb_senha">Senha:</label> <br>
+            <input type="password" name="in_senha"> <br><br>
+            <label for="lb_rep_senha">Digite a senha novamente:</label><br>
+            <input type="password" name="in_rep_senha"> <br>
+            
+            <!-- botoes -->
+            <br><button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+
+        </form>
+    </body>
+
+</html>

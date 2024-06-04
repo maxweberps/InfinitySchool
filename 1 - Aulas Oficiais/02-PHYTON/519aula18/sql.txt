@@ -1,0 +1,13 @@
+/*
+create database escola;
+use escola;
+create table alunos (
+	matricula varchar(100) not null,
+    nome varchar(150) not null,
+    idade int not null,
+    curso varchar(100),
+    nota float
+);
+*/
+use escola;
+select * from alunos;

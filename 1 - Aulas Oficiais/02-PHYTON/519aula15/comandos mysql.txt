@@ -1,0 +1,61 @@
+# SQL => STRUCTURED QUERY LANGUAGE (LINGUAGEM ESTRUTURADA DE CONSULTA)
+-- COMENTÁRIO DE 1 LINHA
+
+# COMANDOS:
+# CREATE, ALTER, DROP (MANIPULAÇÃO DAS TABELAS)
+
+# 1. CREATE
+
+# CRIAR BASE DE DADOS E CRIAR TABELAS.alter
+ #CREATE DATABASE IF NOT EXISTS db_escola;
+ #USE db_escola; # selecionar o banco
+ # CRIAR TABELA
+ /*
+ CREATE TABLE alunos (
+	matricula INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100) NOT NULL,
+    nota FLOAT,
+    dt_nascimento DATE
+    #formato: aaaa-mm-dd
+);
+*/
+#describe disciplinas;
+# DROP: DELETAR BANCO DE DADOS, TABELAS..
+# DROP database db_escola;
+/*
+CREATE TABLE professores (
+	id_prof INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100) NOT NULL,
+    salario FLOAT,
+    dt_criacao DATETIME
+    
+);
+
+CREATE TABLE disciplinas (
+	id_disciplina INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100) NOT NULL,
+    nota_minima FLOAT
+
+);
+*/
+# como adicionar uma coluna?
+# ALTER TABLE alunos ADD data_criacao datetime default now();
+
+#como remover colunas?
+#alter table alunos drop nota;
+
+# como modificar as propriedades de uma coluna
+#alter table alunos modify nome varchar(150) not null;
+
+# como renomear uma coluna?
+#alter table alunos change dt_nascimento data_nasc date;
+
+#alter table professores change dt_criacao data_criacao date;
+#ALTER TABLE professores ADD cpf varchar(11);
+#ALTER TABLE professores ADD area varchar(10);
+#ALTER TABLE professores ADD titulo varchar(10);
+
+#ALTER TABLE disciplinas ADD qtd_alunos int;
+#alter table disciplinas drop nota_minima;
+
+describe disciplinas;
